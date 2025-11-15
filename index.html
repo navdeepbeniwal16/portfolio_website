@@ -3,338 +3,272 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Navdeep Beniwal | Portfolio</title>
+    <title>Navdeep Beniwal | Builder-Engineer</title>
     <meta
       name="description"
-      content="Portfolio of Navdeep Beniwal – Melbourne-based software engineer focused on backend systems, cloud, AI, and product development."
+      content="Software engineer Navdeep Beniwal blends creative facilitation with rigorous engineering to ship thoughtful AI-enabled products."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&family=Sora:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero" id="top">
+    <div class="background-texture" aria-hidden="true"></div>
+    <header class="shell" id="top">
       <nav class="site-nav">
-        <div class="logo">NB</div>
-        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+        <a class="logo" href="#top">NB</a>
         <ul class="nav-links">
-          <li><a href="#journey">Journey</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Builds</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#stories">Stories</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#skills">Toolkit</a></li>
+          <li><a href="#contact">Connect</a></li>
         </ul>
       </nav>
-      <div class="hero-content">
-        <div>
-          <p class="eyebrow">Momentum in progress</p>
-          <h1>Navdeep Beniwal</h1>
-          <p class="lead">
-            Software Engineer in Melbourne shaping resilient backend platforms, cloud-native systems, and ambitious product bets.
-            Driven by constant growth across engineering craft, communication, and life outside the office.
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="tag">Builder · Creative Facilitator · Engineer</p>
+          <h1>Hi, I'm Navdeep Beniwal.</h1>
+          <p>
+            I’m a Melbourne-based software engineer obsessed with pairing craft and care. I love translating messy problems into joyful digital experiences—whether that’s migrating enterprise platforms, crafting AI copilots, or building products for early-stage teams.
           </p>
           <div class="cta-group">
-            <a class="btn primary" href="assets/Navdeep_Beniwal_Resume.pdf" download>
-              Download Resume
-            </a>
-            <a class="btn ghost" href="#journey">Explore Journey</a>
+            <a class="btn primary" href="assets/Navdeep_Beniwal_Resume.pdf" download>Download CV</a>
+            <a class="btn ghost" href="#contact">Let’s collaborate</a>
           </div>
+          <dl class="hero-meta">
+            <div>
+              <dt>Location</dt>
+              <dd>Melbourne · Remote friendly</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>AI-assisted coaching, cloud-native systems, thoughtful UI</dd>
+            </div>
+            <div>
+              <dt>Contact</dt>
+              <dd><a href="tel:+61414601617">+61 414 601 617</a> · <a href="mailto:navdeepbeniwal16@gmail.com">Email</a></dd>
+            </div>
+          </dl>
         </div>
-        <div class="hero-cards">
-          <article>
-            <h3>Melbourne, AUS</h3>
-            <p>Rooted in curiosity, inspired by multicultural communities.</p>
-          </article>
-          <article>
-            <h3>8+ major builds</h3>
-            <p>Led core services across enterprises and fast-moving startups.</p>
-          </article>
-          <article>
-            <h3>Always training</h3>
-            <p>From shipping features to carving new cycling PRs—momentum never rests.</p>
-          </article>
-        </div>
+        <aside class="hero-panel">
+          <p class="eyebrow">Now</p>
+          <div class="highlight-card">
+            <h3>Ceenarios</h3>
+            <p>Designer + engineer of an AI-driven communication coaching platform that simulates real-world scenarios and delivers actionable feedback.</p>
+            <ul>
+              <li>LLM-backed scenario engine</li>
+              <li>Role-play dashboard in Next.js</li>
+              <li>Guided reflection workflows</li>
+            </ul>
+            <a href="https://www.ceenarios.com" target="_blank" rel="noreferrer">Peek at ceenarios.com ↗</a>
+          </div>
+          <div class="highlight-data">
+            <div>
+              <span>5+ years</span>
+              <p>Designing & shipping across enterprise + startup stacks.</p>
+            </div>
+            <div>
+              <span>3 specialties</span>
+              <p>Full-stack shipping, cloud infra, and people-first UX.</p>
+            </div>
+          </div>
+        </aside>
       </div>
     </header>
 
     <main>
-      <section id="journey" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Professional Journey</p>
-          <h2>Chasing compound growth</h2>
+      <section id="about" class="shell about">
+        <div>
+          <p class="eyebrow">Creative x technical loop</p>
+          <h2>I build systems that feel empathetic and scale with intention.</h2>
           <p>
-            Each chapter adds altitude—enterprise-scale resilience, startup scrappiness, and formal computer science rigor.
+            My favorite work sits at the intersection of software engineering and coaching. I’m the person who sketches flows with founders, designs resilient architectures, and sticks around to polish the last mile. Whether I’m setting up AWS foundations from scratch or iterating on Swift/Kotlin apps, the goal is the same: make technology feel human.
           </p>
+        </div>
+        <div class="mode-switcher">
+          <div class="pills" role="tablist" aria-label="Working modes">
+            <button class="pill active" data-mode="builder">Builder</button>
+            <button class="pill" data-mode="engineer">Engineer</button>
+            <button class="pill" data-mode="mentor">Mentor</button>
+          </div>
+          <p id="mode-copy"></p>
+        </div>
+      </section>
+
+      <section id="projects" class="shell projects">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Recent builds</p>
+            <h2>Shipping pragmatic, people-centered tools.</h2>
+          </div>
+          <p>
+            From enterprise migrations to healthcare apps, I’m happiest when the work brings clarity to customers and teammates alike.
+          </p>
+        </div>
+        <div class="project-grid">
+          <article>
+            <header>
+              <p class="status">2025 · Sought Software</p>
+              <h3>Cloud-native document platform</h3>
+            </header>
+            <p>
+              Led an on-premise platform into a secure AWS-native product. Set up infrastructure-as-code, untangled legacy environments, and rewired auth with OAuth2 + JWT for multi-user workflows.
+            </p>
+            <ul>
+              <li>AWS API Gateway · Lambda · DynamoDB · CloudFormation</li>
+              <li>Security-first guardrails & logging</li>
+              <li>Stripe-powered subscription model (in progress)</li>
+            </ul>
+          </article>
+          <article>
+            <header>
+              <p class="status">2024 · AICarer</p>
+              <h3>Cross-platform health companion</h3>
+            </header>
+            <p>
+              Built MVP mobile components in SwiftUI + Kotlin, including dashboards, multi-user switching, and live Garmin-powered data streaming with SSE + push notifications.
+            </p>
+            <ul>
+              <li>Diagnosed iOS background termination bugs</li>
+              <li>REST integrations and incident management flows</li>
+              <li>Collaborated tightly with medical + engineering teams</li>
+            </ul>
+          </article>
+          <article>
+            <header>
+              <p class="status">2021 · Manhattan Associates</p>
+              <h3>Supply chain orchestration</h3>
+            </header>
+            <p>
+              Powered brands like Tim Hortons and J.Crew with custom Angular experiences, resilient REST APIs, and automated Google Cloud Pub/Sub pipelines.
+            </p>
+            <ul>
+              <li>Improved delivery accuracy by 15%</li>
+              <li>Reduced manual interventions by building custom UI</li>
+              <li>Championed data migration automations</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="shell experience">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Roles that shaped my craft.</h2>
         </div>
         <ol class="timeline">
           <li>
-            <div class="timestamp">2024 – Present</div>
+            <div class="time">2025 – Present</div>
             <div>
-              <h3>Senior Platform Engineer · FlowState Labs</h3>
-              <p>
-                Owning backend architecture for AI-driven logistics products. Building event pipelines, shaping product scope, and mentoring engineers across time zones.
-              </p>
+              <h3>Sought Software · Software Developer</h3>
+              <p>Migrating enterprise doc suites to AWS, hardening security, and integrating billing while steering multi-tenant product thinking.</p>
             </div>
           </li>
           <li>
-            <div class="timestamp">2021 – 2024</div>
+            <div class="time">2024 – 2025</div>
             <div>
-              <h3>Software Engineer · Southern Cross Enterprise</h3>
-              <p>
-                Modernised financial microservices powering millions of API calls daily. Established SLOs, automated delivery, and championed cross-team knowledge sharing.
-              </p>
+              <h3>AICarer · Contract Mobile Developer</h3>
+              <p>Shipped live health monitoring flows (Swift, Kotlin) with Garmin + SSE integrations and stabilized real-time alerting.</p>
             </div>
           </li>
           <li>
-            <div class="timestamp">2019 – 2021</div>
+            <div class="time">2024</div>
             <div>
-              <h3>Master of Computer Science · University of Melbourne</h3>
-              <p>
-                Specialized in distributed systems and applied AI. Led research projects compressing ML training time and consulted for student-led startups.
-              </p>
+              <h3>Startmate · Student Fellow (Winter24)</h3>
+              <p>Selected for a builder-first cohort focused on rapid experimentation with founders and operators across Australia.</p>
             </div>
           </li>
           <li>
-            <div class="timestamp">2015 – 2019</div>
+            <div class="time">2021 – 2022</div>
             <div>
-              <h3>B.Tech Computer Science · VIT, India</h3>
-              <p>
-                Built early passion projects—from IoT dashboards to campus products—while grounding in algorithms, systems, and teamwork fundamentals.
-              </p>
+              <h3>Manhattan Associates · Software Engineer</h3>
+              <p>Scaled microservice APIs and UI experiences for global retailers, reducing late deliveries and uplifting operational visibility.</p>
+            </div>
+          </li>
+          <li>
+            <div class="time">2019</div>
+            <div>
+              <h3>Hewlett Packard Enterprise · Academic Intern</h3>
+              <p>Built ML classifiers and nudged customer satisfaction +13% by wiring insights into support workflows.</p>
+            </div>
+          </li>
+          <li>
+            <div class="time">2019</div>
+            <div>
+              <h3>National University of Singapore · Academic Intern</h3>
+              <p>Co-led a CNN-powered mood detection prototype using Keras + transfer learning.</p>
             </div>
           </li>
         </ol>
       </section>
 
-      <section id="experience" class="section surface">
+      <section id="skills" class="shell skills">
         <div class="section-heading">
-          <p class="eyebrow">Experience</p>
-          <h2>Where momentum meets impact</h2>
+          <p class="eyebrow">Toolkit</p>
+          <h2>Craft across stacks, clouds, and communities.</h2>
         </div>
-        <div class="grid two">
-          <article class="card">
-            <header>
-              <h3>Senior Platform Engineer · FlowState Labs</h3>
-              <p class="meta">2024 – Present · Melbourne / Remote</p>
-            </header>
-            <ul>
-              <li>Designed event-driven data backbone ingesting telemetry from 2M+ devices.</li>
-              <li>Pioneered "momentum reviews"—monthly experiments that pair product hypotheses with measurable learning loops.</li>
-              <li>Built pragmatic AI services (retrieval-augmented assistants, forecasting) embedded into ops workflows.</li>
-            </ul>
-            <div class="tags">
-              <span>Go</span><span>Python</span><span>gRPC</span><span>GCP</span><span>Pub/Sub</span>
-            </div>
-          </article>
-          <article class="card">
-            <header>
-              <h3>Software Engineer · Southern Cross Enterprise</h3>
-              <p class="meta">2021 – 2024 · Melbourne</p>
-            </header>
-            <ul>
-              <li>Led migration of legacy monolith modules into discoverable microservices with zero downtime.</li>
-              <li>Instituted golden paths for observability, shaving MTTR by 38%.</li>
-              <li>Partnered with product to craft customer journey instrumentation, pushing roadmap decisions with real data.</li>
-            </ul>
-            <div class="tags">
-              <span>Java</span><span>Kotlin</span><span>AWS</span><span>Kafka</span><span>PostgreSQL</span>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="qualifications" class="section">
-        <div class="grid two">
-          <div>
-            <div class="section-heading">
-              <p class="eyebrow">Qualifications</p>
-              <h2>Academic foundations</h2>
-            </div>
-            <div class="card">
-              <h3>Master of Computer Science</h3>
-              <p class="meta">University of Melbourne · 2019 – 2021</p>
-              <p>Focus: Distributed systems, AI for decision support, human-centered computing.</p>
-            </div>
-            <div class="card">
-              <h3>B.Tech Computer Science</h3>
-              <p class="meta">Vellore Institute of Technology · 2015 – 2019</p>
-              <p>Graduated with distinction, launched multiple student-led products still running today.</p>
-            </div>
-          </div>
-          <div>
-            <div class="section-heading">
-              <p class="eyebrow">Certifications</p>
-              <h2>Proof of craft</h2>
-            </div>
-            <ul class="list">
-              <li>AWS Certified Solutions Architect – Associate (2023)</li>
-              <li>Google Cloud Professional Cloud Architect (2022)</li>
-              <li>Certified Scrum Product Owner (2021)</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="section surface">
-        <div class="section-heading">
-          <p class="eyebrow">Projects & Initiatives</p>
-          <h2>Building in motion</h2>
-          <p>Side projects are my sandbox for testing ideas before they reach production backlogs.</p>
-        </div>
-        <div class="grid three">
-          <article class="card project">
-            <div class="pill">In progress</div>
-            <h3>Momentum API Platform</h3>
-            <p>Unified API gateway + experimentation toolkit for startups to ship new customer experiences without touching core systems.</p>
-            <ul>
-              <li>Policy-driven routing, latency-aware retries.</li>
-              <li>A/B harness wired to product analytics.</li>
-            </ul>
-          </article>
-          <article class="card project">
-            <div class="pill">Shipped</div>
-            <h3>Everyday Labs</h3>
-            <p>Personal knowledge app combining spaced repetition with habit tracking—keeps learnings, workouts, and reflections aligned.</p>
-            <ul>
-              <li>Offline-first PWA with sync workers.</li>
-              <li>Adaptive streaks rooted in HRV data.</li>
-            </ul>
-          </article>
-          <article class="card project">
-            <div class="pill">Open source</div>
-            <h3>Telemetry Canvas</h3>
-            <p>Composable observability starter to bootstrap metrics + tracing for new services in < 15 minutes.</p>
-            <ul>
-              <li>Pre-wired dashboards for Grafana & LookerStudio.</li>
-              <li>Includes chaos-playbook templates.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section id="skills" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Skills & Interests</p>
-          <h2>Full-stack thinking with backend roots</h2>
-        </div>
-        <div class="grid three skill-grid">
+        <div class="skills-grid">
           <article>
-            <h3>Backend Systems</h3>
-            <p>Distributed services, API design, data modeling, resilience testing.</p>
-            <div class="skill-bar" data-level="92"></div>
-            <div class="chips">
-              <span>Go</span><span>Java/Kotlin</span><span>Python</span><span>Node.js</span>
-            </div>
+            <h3>Languages & Frameworks</h3>
+            <p>JavaScript/TypeScript · Java · Python · React · Next.js · Node.js · Express · Django · SwiftUI · Kotlin</p>
           </article>
           <article>
-            <h3>Cloud & Intelligence</h3>
-            <p>Cloud-native architectures, AI augmentation, infrastructure as code.</p>
-            <div class="skill-bar" data-level="86"></div>
-            <div class="chips">
-              <span>AWS</span><span>GCP</span><span>Terraform</span><span>Vertex AI</span>
-            </div>
+            <h3>Cloud & DevOps</h3>
+            <p>AWS (EC2, S3, API Gateway, Lambda, DynamoDB, CloudFormation), Docker, CI/CD with GitHub Actions, Vercel.</p>
           </article>
           <article>
-            <h3>Product & Growth</h3>
-            <p>Roadmapping, discovery workshops, experiment design, stakeholder coaching.</p>
-            <div class="skill-bar" data-level="80"></div>
-            <div class="chips">
-              <span>Product Strategy</span><span>Leadership</span><span>Mentorship</span>
-            </div>
+            <h3>Quality & Systems</h3>
+            <p>System design, architecture reviews, testing (JUnit, Jest, Cypress), observability, automation-first mindset.</p>
+          </article>
+          <article>
+            <h3>Collaboration & Languages</h3>
+            <p>English (Full professional), Hindi (Native), empathetic facilitation, cross-functional storytelling.</p>
           </article>
         </div>
       </section>
 
-      <section id="languages-awards" class="section surface">
-        <div class="grid two">
-          <div>
-            <div class="section-heading">
-              <p class="eyebrow">Languages</p>
-              <h2>Communicating across cultures</h2>
-            </div>
-            <ul class="list">
-              <li>English – Professional fluency</li>
-              <li>Hindi – Native fluency</li>
-              <li>Punjabi – Conversational</li>
-            </ul>
-          </div>
-          <div>
-            <div class="section-heading">
-              <p class="eyebrow">Awards</p>
-              <h2>Recognising the grind</h2>
-            </div>
-            <ul class="list">
-              <li>Innovation Champion · FlowState Labs (2024)</li>
-              <li>Dean's List · University of Melbourne (2020)</li>
-              <li>VIT Chancellor's Merit Scholarship (2018)</li>
-            </ul>
-          </div>
+      <section class="shell education">
+        <div class="edu-card">
+          <p class="eyebrow">Education</p>
+          <h3>University of Melbourne</h3>
+          <p>Master of Software Engineering · 2022 – 2023</p>
         </div>
-      </section>
-
-      <section id="stories" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Blogs & Talks</p>
-          <h2>Documenting lessons in motion</h2>
+        <div class="edu-card">
+          <p class="eyebrow">Education</p>
+          <h3>Vellore Institute of Technology</h3>
+          <p>B.E. Computer Science · 2016 – 2020</p>
         </div>
-        <div class="grid three">
-          <article class="card story">
-            <h3>Designing APIs with a Pace Plan</h3>
-            <p>How endurance training inspired a playbook for planning API maturity stages.</p>
-            <a href="https://medium.com/@navdeepbeniwal/designing-apis-with-a-pace-plan" target="_blank" rel="noreferrer">Read post →</a>
-          </article>
-          <article class="card story">
-            <h3>Operational AI for Real Teams</h3>
-            <p>Bringing RAG assistants to ops teams without derailing their day-to-day rituals.</p>
-            <a href="https://medium.com/@navdeepbeniwal/operational-ai" target="_blank" rel="noreferrer">Read post →</a>
-          </article>
-          <article class="card story">
-            <h3>Momentum Reviews</h3>
-            <p>A lightweight retrospective format that keeps growth conversations honest.</p>
-            <a href="https://navdeepbeniwal.com/blog/momentum-reviews" target="_blank" rel="noreferrer">Read post →</a>
-          </article>
-        </div>
-      </section>
-
-      <section id="hobbies" class="section surface">
-        <div class="section-heading">
-          <p class="eyebrow">Outside of work</p>
-          <h2>Hobbies that keep me grounded</h2>
-        </div>
-        <div class="grid three">
-          <article class="card hobby">
-            <h3>Endurance Sports</h3>
-            <p>Road cycling and long-distance running give me structured ways to test limits and recharge.</p>
-          </article>
-          <article class="card hobby">
-            <h3>Food Experiments</h3>
-            <p>Iterating on nutrient-dense meals—balancing macros like I balance system budgets.</p>
-          </article>
-          <article class="card hobby">
-            <h3>Community Building</h3>
-            <p>Hosting engineering circles in Melbourne to swap learnings, code, and accountability goals.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="section cta">
-        <p class="eyebrow">Next challenge</p>
-        <h2>Let’s co-create systems that move with purpose.</h2>
-        <p>Open to impactful roles, advisory opportunities, or simply trading training tips.</p>
-        <div class="cta-group">
-          <a class="btn primary" href="mailto:navdeep@navdeepbeniwal.com">Email Me</a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/navdeepbeniwal" target="_blank" rel="noreferrer">LinkedIn</a>
+        <div class="edu-card">
+          <p class="eyebrow">Community</p>
+          <h3>Startmate Student Fellow</h3>
+          <p>Winter 2024 cohort · Experiments, mentorship, founder circles.</p>
         </div>
       </section>
     </main>
 
+    <section id="contact" class="shell contact">
+      <div>
+        <p class="eyebrow">Let’s build</p>
+        <h2>Have a product idea, a tough migration, or a team that needs creative momentum?</h2>
+        <p>
+          I’d love to hear about it—whether it’s a full-time role, freelance help, or a collaborative experiment.
+        </p>
+      </div>
+      <div class="contact-actions">
+        <a class="btn primary" href="mailto:navdeepbeniwal16@gmail.com">Email Navdeep</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/navdeep16beniwal" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn ghost" href="tel:+61414601617">Call</a>
+      </div>
+    </section>
+
     <footer>
-      <p>© <span id="year"></span> Navdeep Beniwal · Constant momentum.</p>
+      <p>© <span id="year"></span> Navdeep Beniwal · Creative systems, engineered with heart.</p>
       <a href="#top">Back to top ↑</a>
     </footer>
 
