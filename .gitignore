@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Build artifacts
+/dist/
+
+# Environment files
+.env
