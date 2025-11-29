@@ -50,3 +50,34 @@ const observer = new IntersectionObserver(
   { threshold: 0.2 }
 );
 sections.forEach((section) => observer.observe(section));
+
+const intro = document.querySelector('.intro-screen');
+const introTexts = document.querySelectorAll('.intro-text');
+if (intro && introTexts.length) {
+  const first = introTexts[0];
+  const second = introTexts[1];
+  window.addEventListener('load', () => {
+    first.classList.add('show');
+    setTimeout(() => {
+      first.classList.remove('show');
+      second.classList.add('show');
+    }, 1900);
+    setTimeout(() => {
+      intro.classList.add('hide');
+      const removeDelay =
+        parseFloat(getComputedStyle(intro).transitionDuration || '0') * 1000 + 200;
+      setTimeout(() => intro.remove(), removeDelay);
+    }, 3800);
+  });
+}
+
+const headshot = document.querySelector('.headshot-frame img');
+const headshotPlaceholder = document.querySelector('.headshot-placeholder');
+if (headshot) {
+  headshot.addEventListener('load', () => {
+    headshotPlaceholder?.classList.add('hide-placeholder');
+  });
+  headshot.addEventListener('error', () => {
+    headshot.classList.add('hide');
+  });
+}
